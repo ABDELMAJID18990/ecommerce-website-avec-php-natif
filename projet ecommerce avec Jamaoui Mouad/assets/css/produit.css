@@ -1,7 +1,53 @@
-#qte{
-    width:16rem;
+#qte {
+    width: 16rem;
 }
-.counter{
+
+.counter {
     margin: 0 auto;
     width: 50%;
+}
+
+/* --- Style de la Carte Produit --- */
+.product-card {
+    border: none !important;
+    /* Enlève la bordure grise moche */
+    border-radius: 15px !important;
+    /* Coins bien arrondis */
+    transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    /* Animation fluide */
+    background: #fff;
+    overflow: hidden;
+    /* Important pour que le zoom ne dépasse pas */
+}
+
+/* L'effet au survol de la souris */
+.product-card:hover {
+    transform: translateY(-10px);
+    /* La carte monte */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+    /* Une belle ombre diffuse apparaît */
+}
+
+/* --- Effet Zoom sur l'image --- */
+.product-card .img-container {
+    overflow: hidden;
+    /* Masque ce qui dépasse */
+    height: 250px;
+    /* Fixe la hauteur */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-card img {
+    transition: transform 0.5s ease;
+    /* Le zoom est plus lent que la carte, c'est élégant */
+    max-height: 80%;
+    /* Pour laisser de l'air autour de l'image */
+    width: auto;
+}
+
+.product-card:hover img {
+    transform: scale(1.1);
+    /* Zoom à 110% */
 }

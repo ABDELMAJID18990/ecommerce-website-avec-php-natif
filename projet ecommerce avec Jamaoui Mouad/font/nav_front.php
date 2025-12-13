@@ -9,7 +9,7 @@ if( isset($_SESSION['utilisateur'])){
 ?>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">Ecommerce</a>
+    <a class="navbar-brand" href="#">ShopEcommerce</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -35,3 +35,31 @@ if( isset($_SESSION['utilisateur'])){
       </a>
   </div>
 </nav>
+
+<style>
+  /* Dans assets/css/style.css */
+  .navbar {
+    background-color: #ffffff !important;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+    /* Ombre très légère */
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+
+  .navbar-brand {
+    font-weight: 800;
+    letter-spacing: -0.5px;
+    color: #1a1a1a !important;
+  }
+
+  .nav-link {
+    font-weight: 500;
+    color: #555 !important;
+  }
+
+  .nav-link:hover,
+  .nav-link.active {
+    color: #0d6efd !important;
+    /* Bleu primaire au survol */
+  }
+</style>
