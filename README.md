@@ -5,7 +5,6 @@
 Une application e-commerce complète développée en **PHP Natif (sans framework)**. 
 
 Ce projet a pour but de démontrer ma maîtrise des fondamentaux du développement web backend et frontend :
-*   **Architecture MVC (Logic First)** sans dépendances externes.
 *   **Sécurité** (Protection XSS, Injections SQL, Hachage de mots de passe).
 *   **Gestion de base de données** relationnelle (MySQL).
 *   **Déploiement** sur serveur distant (FTP/SQL).
